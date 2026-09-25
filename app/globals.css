@@ -1,3 +1,4 @@
+@import "tailwindcss";
 @import "tw-animate-css";
 @import "../vendor/shadcn-tailwind-4.13.0.css";
 
@@ -25,7 +26,7 @@ body { margin: 0; background: var(--background); color: var(--foreground); font-
 button, input { font: inherit; }
 button { cursor: pointer; }
 
-/* v10 customer shell: deliberately replaces the old dark ABC presentation. */
+/* Customer shell */
 :root { color-scheme: light; }
 html,body { background:#f7f7f5 !important; color:#222 !important; }
 body { font-family: Arial, Helvetica, sans-serif; }
