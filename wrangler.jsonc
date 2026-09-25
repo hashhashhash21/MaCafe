@@ -1,0 +1,22 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "marams-cafe",
+  "compatibility_date": "2026-09-25",
+  "compatibility_flags": ["nodejs_compat"],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "marams-cafe-db",
+      "database_id": "REPLACE_WITH_YOUR_D1_DATABASE_ID",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "vars": {
+    "ANAM_AVATAR_ID": "f01c2101-bdf3-4766-9f2a-ed07fa5fe139",
+    "ANAM_AGENT_ID": "c38d14db-f0be-457a-90b0-87351d210591",
+    "ANAM_VOICE_ID": "c48c4dd9-5050-11f1-9076-5e955d484d11",
+    "ANAM_LLM_ID": "a7cf662c-2ace-4de1-a21e-ef0fbf144bb7",
+    "ANAM_BARISTA_NAME": "Maram · Maram's Cafe",
+    "PAYMENT_PROVIDER": "disabled"
+  }
+}
