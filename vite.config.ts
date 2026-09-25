@@ -7,4 +7,9 @@ export default defineConfig({
     vinext(),
     cloudflare({ viteEnvironment: { name: 'rsc', childEnvironments: ['ssr'] } }),
   ],
+  build: {
+    rollupOptions: {
+      external: ['cloudflare:workers'],
+    },
+  },
 });
