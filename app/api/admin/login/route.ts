@@ -1,0 +1,3 @@
+import { NextResponse } from 'next/server';
+import { clearLoginFailures, clientKey, createAdminSession, loginAllowed, recordLoginFailure, validPassword } from '@/lib/admin-auth';
+export async function POST(req:Request){const key=clientKey(req);if(!await loginAllowed(key))return NextResponse.json({error:'Too many failed attempts. Try again later.'},{status:429});const {password=''}=await req.json().catch(()=>({}));if(!validPassword(String(password))){await recordLoginFailure(key);return NextResponse.json({error:'Invalid admin password'},{status:401});}await clearLoginFailures(key);const session=await createAdminSession();return NextResponse.json({ok:true,...session});}

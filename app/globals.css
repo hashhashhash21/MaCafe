@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "../vendor/shadcn-tailwind-4.13.0.css";
+
+@utility scrollbar-none { scrollbar-width: none; &::-webkit-scrollbar { display: none; } }
+
+:root {
+  --background: #090807; --foreground: #f5f5f4; --card: #141311; --card-foreground: #f5f5f4;
+  --primary: #fbbf24; --primary-foreground: #090807; --secondary: #1c1917; --secondary-foreground: #f5f5f4;
+  --muted: #1c1917; --muted-foreground: #a8a29e; --accent: #292524; --accent-foreground: #fef3c7;
+  --destructive: #ef4444; --border: #ffffff1a; --input: #ffffff1f; --ring: #f59e0b; --radius: 0.875rem;
+}
+
+@theme inline {
+  --color-background: var(--background); --color-foreground: var(--foreground); --color-card: var(--card); --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary); --color-primary-foreground: var(--primary-foreground); --color-secondary: var(--secondary); --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted); --color-muted-foreground: var(--muted-foreground); --color-accent: var(--accent); --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive); --color-border: var(--border); --color-input: var(--input); --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px); --radius-md: calc(var(--radius) - 2px); --radius-lg: var(--radius); --radius-xl: calc(var(--radius) + 4px);
+  --font-sans: Arial, "Noto Sans Arabic", sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { background: #090807; }
+body { margin: 0; background: var(--background); color: var(--foreground); font-family: Arial, "Noto Sans Arabic", sans-serif; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+
+/* v10 customer shell: deliberately replaces the old dark ABC presentation. */
+:root { color-scheme: light; }
+html,body { background:#f7f7f5 !important; color:#222 !important; }
+body { font-family: Arial, Helvetica, sans-serif; }
+main { background:#f7f7f5 !important; color:#222 !important; }
+header { background:rgba(255,255,255,.96) !important; border-color:#e5e5e5 !important; box-shadow:0 1px 12px rgba(0,0,0,.05); }
+header * { color:#222; }
+header [class*="amber"] { color:#8b5a2b !important; }
+aside { background:#fff !important; border-color:#e4e4e4 !important; color:#222 !important; box-shadow:0 12px 30px rgba(0,0,0,.06); }
+section { color:#222 !important; }
+section h1, section h2 { color:#222 !important; }
+section article { background:#fff !important; border-color:#e4e4e4 !important; box-shadow:0 8px 22px rgba(0,0,0,.045); }
+section article:hover { border-color:#d2b48c !important; box-shadow:0 14px 28px rgba(0,0,0,.08); }
+section article p { color:#666 !important; }
+section article h2 { color:#222 !important; }
+nav button { background:#fff !important; border:1px solid #ddd !important; color:#444 !important; }
+nav button[class*="bg-amber"] { background:#222 !important; color:#fff !important; border-color:#222 !important; }
+button[class*="bg-amber"] { background:#ffbc0d !important; color:#1f1f1f !important; }
+input { color:#222 !important; }
+.sticky.bottom-4 { background:#fff !important; border-color:#ddd !important; }
