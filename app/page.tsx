@@ -16,14 +16,14 @@ const menu: MenuItem[] = [
   {"id": 6, "largePrice": 15, "image": "/products/hot-chocolate.webp", "name": "Hot Chocolate", "ar": "شوكولاتة ساخنة", "price": 13, "calories": 0, "category": "Hot Beverages", "note": "Rich chocolate blended with hot milk."},
   {"id": 7, "largePrice": 15, "image": "/products/mocha.webp", "name": "Mocha", "ar": "موكا", "price": 13, "calories": 0, "category": "Hot Beverages", "note": "Espresso, chocolate and steamed milk."},
   {"id": 8, "doublePrice": 10, "image": "/products/espresso.webp", "name": "Espresso", "ar": "إسبريسو", "price": 7, "calories": 0, "category": "Hot Beverages", "note": "A concentrated shot of espresso.", "badge": "Classic"},
-  {"id": 9, "image": "/products/green-tea.webp", "name": "Premium Dilmah Green Tea", "ar": "شاي ديلما أخضر فاخر", "price": 7, "calories": 0, "category": "Hot Beverages", "note": "Premium green tea served hot."},
-  {"id": 10, "image": "/products/black-tea.webp", "name": "Premium Dilmah Black Tea", "ar": "شاي ديلما أسود فاخر", "price": 7, "calories": 0, "category": "Hot Beverages", "note": "Premium black tea served hot."},
+  {"id": 9, "image": "/products/green-tea.webp", "name": "Premium Green Tea", "ar": "شاي أخضر فاخر", "price": 7, "calories": 0, "category": "Hot Beverages", "note": "Premium green tea served hot."},
+  {"id": 10, "image": "/products/black-tea.webp", "name": "Premium Black Tea", "ar": "شاي أسود فاخر", "price": 7, "calories": 0, "category": "Hot Beverages", "note": "Premium black tea served hot."},
   {"id": 11, "largePrice": 16, "image": "/products/caramel-macchiato.webp", "name": "Caramel Macchiato", "ar": "كراميل ماكياتو", "price": 14, "calories": 0, "category": "Hot Beverages", "note": "Espresso and steamed milk finished with caramel.", "badge": "Popular"},
   {"id": 12, "largePrice": 16, "image": "/products/white-mocha.webp", "name": "White Mocha", "ar": "وايت موكا", "price": 14, "calories": 0, "category": "Hot Beverages", "note": "Espresso with white chocolate and steamed milk."},
   {"id": 13, "image": "/products/caramel-frappe.webp", "name": "Caramel Frappe", "ar": "كراميل فرابيه", "price": 16, "calories": 0, "category": "Cold Beverages", "note": "Blended iced coffee with caramel."},
   {"id": 14, "image": "/products/mocha-frappe.webp", "name": "Mocha Frappe", "ar": "موكا فرابيه", "price": 16, "calories": 0, "category": "Cold Beverages", "note": "Blended iced coffee with chocolate."},
-  {"id": 15, "image": "/products/vanilla-oreo-frappe.webp", "name": "Vanilla Oreo Frappe", "ar": "فانيلا أوريو فرابيه", "price": 18, "calories": 0, "category": "Cold Beverages", "note": "Creamy vanilla frappe blended with Oreo.", "badge": "Treat"},
-  {"id": 16, "image": "/products/chocolate-oreo-frappe.webp", "name": "Chocolate Oreo Frappe", "ar": "شوكولاتة أوريو فرابيه", "price": 18, "calories": 0, "category": "Cold Beverages", "note": "Chocolate frappe blended with Oreo.", "badge": "Treat"},
+  {"id": 15, "image": "/products/vanilla-oreo-frappe.webp", "name": "Vanilla Cookie Frappe", "ar": "فانيلا كوكي فرابيه", "price": 18, "calories": 0, "category": "Cold Beverages", "note": "Creamy vanilla frappe blended with chocolate cookie pieces.", "badge": "Treat"},
+  {"id": 16, "image": "/products/chocolate-oreo-frappe.webp", "name": "Chocolate Cookie Frappe", "ar": "شوكولاتة كوكي فرابيه", "price": 18, "calories": 0, "category": "Cold Beverages", "note": "Chocolate frappe blended with chocolate cookie pieces.", "badge": "Treat"},
   {"id": 17, "image": "/products/strawberry-banana-smoothie.webp", "name": "Strawberry Banana Smoothie", "ar": "سموذي فراولة وموز", "price": 20, "calories": 0, "category": "Cold Beverages", "note": "Fruit smoothie with strawberry and banana."},
   {"id": 18, "image": "/products/mango-smoothie.webp", "name": "Mango Smoothie", "ar": "سموذي مانجو", "price": 20, "calories": 0, "category": "Cold Beverages", "note": "Smooth and refreshing mango fruit blend."},
   {"id": 19, "image": "/products/iced-americano.webp", "name": "Iced Americano", "ar": "أمريكانو مثلج", "price": 10, "calories": 0, "category": "Cold Beverages", "note": "Espresso and chilled water served over ice."},
@@ -31,10 +31,10 @@ const menu: MenuItem[] = [
   {"id": 21, "image": "/products/iced-mocha.webp", "name": "Iced Mocha", "ar": "موكا مثلج", "price": 15, "calories": 0, "category": "Cold Beverages", "note": "Espresso, chocolate and milk over ice."},
   {"id": 22, "image": "/products/iced-caramel-macchiato.webp", "name": "Iced Caramel Macchiato", "ar": "كراميل ماكياتو مثلج", "price": 16, "calories": 0, "category": "Cold Beverages", "note": "Iced espresso and milk with caramel.", "badge": "Popular"},
   {"id": 23, "image": "/products/iced-white-mocha.webp", "name": "Iced White Mocha", "ar": "وايت موكا مثلج", "price": 16, "calories": 0, "category": "Cold Beverages", "note": "Iced espresso with white chocolate and milk."},
-  {"id": 24, "image": "/products/chocolate-mcbites.webp", "name": "Chocolate McBites", "ar": "ماك بايتس شوكولاتة", "price": 9, "calories": 0, "category": "Treats", "note": "Bite-size chocolate bakery treat."},
+  {"id": 24, "image": "/products/chocolate-mcbites.webp", "name": "Chocolate Bites", "ar": "قطع شوكولاتة", "price": 9, "calories": 0, "category": "Treats", "note": "Bite-size chocolate bakery treat."},
   {"id": 25, "image": "/products/double-chocolate-cookie.webp", "name": "Double Chocolate Cookie", "ar": "كوكيز دبل شوكولاتة", "price": 10, "calories": 0, "category": "Treats", "note": "Soft cookie packed with chocolate."},
   {"id": 26, "image": "/products/triple-chocolate-cookie.webp", "name": "Triple Chocolate Cookie", "ar": "كوكيز تربل شوكولاتة", "price": 10, "calories": 0, "category": "Treats", "note": "Rich cookie with three chocolate notes."},
-  {"id": 27, "image": "/products/brown-tumbler.webp", "name": "Brown Tumbler", "ar": "تمبلر بني", "price": 40, "calories": 0, "category": "Tumblers", "note": "Reusable brown McCafé tumbler."},
+  {"id": 27, "image": "/products/brown-tumbler.webp", "name": "Brown Tumbler", "ar": "تمبلر بني", "price": 40, "calories": 0, "category": "Tumblers", "note": "Reusable brown Virtual Cafe tumbler."},
 ];
 
 const categories = ["All Items", "Hot Beverages", "Cold Beverages", "Treats", "Tumblers"];
@@ -227,7 +227,7 @@ export default function Home() {
       context.registerTool({
         name: "add_menu_item",
         title: "Add menu item",
-        description: "Add a coffee or pastry to the visible McCafé bucket by its numeric menu ID.",
+        description: "Add a coffee or pastry to the visible Virtual Cafe bucket by its numeric menu ID.",
         inputSchema: { type: "object", properties: { itemId: { type: "number", minimum: 1, maximum: 27 }, quantity: { type: "number", minimum: 1, maximum: 10 } }, required: ["itemId"], additionalProperties: false },
         annotations: { readOnlyHint: false, untrustedContentHint: false },
         execute(input: unknown) {
@@ -246,7 +246,7 @@ export default function Home() {
       context.registerTool({
         name: "clear_bucket",
         title: "Clear bucket",
-        description: "Remove every item from the visible McCafé bucket.",
+        description: "Remove every item from the visible Virtual Cafe bucket.",
         inputSchema: { type: "object", properties: {}, additionalProperties: false },
         annotations: { readOnlyHint: false, untrustedContentHint: false },
         execute() { setCart({}); setCartMeta({}); setPickupToken(""); return { cleared: true }; },
@@ -278,7 +278,7 @@ export default function Home() {
         </aside>
 
         <section className="min-w-0">
-          <div className="mb-6 flex flex-col justify-between gap-4 sm:flex-row sm:items-end"><div><p className="mb-2 text-sm font-bold uppercase tracking-[.2em] text-amber-400">Maram's Cafe Menu</p><h1 className="text-3xl font-black tracking-tight text-[#222] sm:text-4xl">{arabic ? "اختر مشروبك أو الحلى المفضل من ماك كافيه" : "Your McCafé favourites, all in one place"}</h1></div>
+          <div className="mb-6 flex flex-col justify-between gap-4 sm:flex-row sm:items-end"><div><p className="mb-2 text-sm font-bold uppercase tracking-[.2em] text-amber-400">Maram's Cafe Menu</p><h1 className="text-3xl font-black tracking-tight text-[#222] sm:text-4xl">{arabic ? "اختر مشروبك أو الحلى المفضل من المقهى الافتراضي" : "Your Virtual Cafe favourites, all in one place"}</h1></div>
             <button onClick={() => setCartOpen(true)} className="flex items-center gap-2 self-start rounded-2xl border border-black/10 bg-black/[.03] px-4 py-3 text-sm font-bold sm:self-auto"><ShoppingBag size={18} className="text-amber-400" />{arabic ? "طلبي" : "My order"}<span className="rounded-full bg-amber-400 px-2 py-0.5 text-xs text-black">{count}</span></button>
           </div>
           <nav className="scrollbar-none mb-6 flex gap-2 overflow-x-auto pb-1" aria-label="Menu categories">{categories.map((name) => <button key={name} onClick={() => setCategory(name)} className={`shrink-0 rounded-full px-4 py-2.5 text-sm font-bold ${category === name ? "bg-amber-400 text-stone-950" : "border border-black/10 bg-black/[.02] text-stone-600 hover:text-[#222]"}`}>{name}</button>)}</nav>
